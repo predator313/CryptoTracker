@@ -3,7 +3,7 @@ package com.example.cryptocurrencytracker.crypto.presentation.model
 import android.icu.text.NumberFormat
 import androidx.annotation.DrawableRes
 import com.example.cryptocurrencytracker.crypto.domain.Coin
-import com.example.cryptocurrencytracker.utils.getDrawableIdForCoin
+import com.example.cryptocurrencytracker.core.presentation_util.getDrawableIdForCoin
 import java.util.Locale
 
 data class CoinUi(

@@ -1,4 +1,4 @@
-package com.example.cryptocurrencytracker.utils
+package com.example.cryptocurrencytracker.core.domain_util
 
 typealias DomainError = Error
 

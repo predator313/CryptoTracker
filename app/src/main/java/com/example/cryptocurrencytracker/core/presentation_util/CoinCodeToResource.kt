@@ -1,4 +1,4 @@
-package com.example.cryptocurrencytracker.utils
+package com.example.cryptocurrencytracker.core.presentation_util
 
 import com.example.cryptocurrencytracker.R
 
