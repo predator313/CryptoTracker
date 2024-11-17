@@ -1,4 +1,4 @@
-package com.example.cryptocurrencytracker.crypto.domain
+package com.example.cryptocurrencytracker.crypto.domain.model
 
 data class Coin(
     val id: String,
