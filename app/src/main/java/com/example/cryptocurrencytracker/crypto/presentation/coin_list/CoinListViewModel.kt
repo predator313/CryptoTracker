@@ -64,7 +64,13 @@ class CoinListViewModel(
     }
     fun onEvents(events: CoinListEvents) {
         when(events){
-            is CoinListEvents.OnCoinClick ->{}
+            is CoinListEvents.OnCoinClick ->{
+                _state.update {
+                    it.copy(
+                        selectedCoin = events.coinUi
+                    )
+                }
+            }
             is CoinListEvents.OnRefresh ->{}
         }
     }
