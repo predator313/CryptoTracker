@@ -21,13 +21,14 @@ import com.example.cryptocurrencytracker.ui.theme.CryptoCurrencyTrackerTheme
 import org.koin.androidx.compose.koinViewModel
 
 class MainActivity : ComponentActivity() {
+    private lateinit var viewModel: CoinListViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             CryptoCurrencyTrackerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    val viewModel = koinViewModel<CoinListViewModel>()
+                    viewModel = koinViewModel()
                     val state = viewModel.state.collectAsStateWithLifecycle()
                     val context = LocalContext.current
                     ObserveAsErrorEvents(
